@@ -1,0 +1,22 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+#sidebar #avatar {
+  box-shadow: none;
+}
+
+body {
+  --main-bg: #0a0a0a;
+  --text-muted-color: #d4d4d4;
+  --site-title-color: #d4d4d4;
+  --text-color: #d4d4d4;
+  --sidebar-muted-color: #d4d4d4;
+}
